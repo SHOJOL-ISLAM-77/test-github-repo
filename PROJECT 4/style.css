@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+                    /* header start */
+header{
+    background-color: rgb(36, 152, 152);
+    width: 100%;
+    border: 2px solid black;
+}
+header i{
+    font-size: 70px;
+    color: aliceblue;
+    border: 5px solid #fff;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 15px;
+}
+header .left{
+    text-align: center;
+}
+header .right{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+header .right li{
+    font-size: 30px;
+    width: 100%;
+}
+header .right li a{
+    padding: 10px;
+    margin: 20px;
+    color: #fff;
+    background-color: rgb(3, 54, 54);
+    display: block;
+}
+header .right li a:hover{
+    box-shadow: 5px 5px 5px;
+}
+
+                                 /* header end */
+                                 /* main start */
+main{
+    text-align: center;
+    background-image:url(./valentin-b-kremer-MzVxrOWYmQQ-unsplash.jpg) ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main h1{
+    font-size: 55px;
+    background-color: yellow;
+    padding: 5px 10px;
+    margin:25px;
+    display: inline-block;
+}
+main h2{
+    font-size: 35px;
+    background-color:green;
+    padding: 15px;
+    margin:15px;
+    display: inline-block;
+}
+main button{
+    font-size: 30px;
+    background-color:green;
+    padding: 15px;
+    margin:15px;
+    display: inline-block;
+}
+.about-us{
+    text-align: center;
+    padding: 20px;
+}
+.about-us h1{
+    font-size: 55px;
+    padding: 20px;
+}
+.about-us p{
+    font-size: 25px;
+}
+
+                                  /* main end */
+                                  /* card start */
+.card-container .cards img{
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+.card-container .cards h1{
+    background-color: green;
+    padding: 10px;
+    color: black;
+}
+.card-container .cards h2{
+    padding: 10px;
+}
+.card-container .cards{
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    width: 450px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+.card-container .cards:hover{
+    box-shadow: 5px 5px 5px;
+    transform: scale(1.015);
+}
+.card-container{
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+}
+
+                                   /* card end */
+                                   /* contact us start */
+
+.contact-us{
+    background-color:rgb(44, 55, 92);
+    padding: 20px;
+}
+.contact-us iframe{
+    width: 100%;
+}
+.contact-us .contact-details{
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+.contact-us .contact-details h3{
+    margin-top: 30px;
+}
+
+                                    /* contact us end */
+                                    /* footer start */
+
+footer{
+    background-color:rgb(22, 28, 47) ;
+    color: #fff;
+    text-align: center;
+}
+footer .left{
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px;
+}
+footer .i-style{
+    font-size: 25px;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.5s;
+}
+footer .i-style:hover{
+    background-color: gray;
+    transform: scale(1.2);
+}
+#nxt-p{
+    font-size: 15px;
+}
+
+                                    /* footer end */
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header .left{
+        display: inline-block;
+        float: left;
+        margin-top:100px ;
+    }
+    header .right{
+        width: 50%;
+        float: right;
+    }
+    header .right li{
+        font-size: 30px;
+    }
+    header .right li a{
+        padding: 10px;
+        margin: 20px;
+        color: #fff;
+        background-color: rgb(3, 54, 54);
+    }
+    .clear{
+        clear: both;
+    }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header{
+        background-color: rgb(36, 152, 152);
+        width: 100%;
+        border: 2px solid black;
+    }
+    header i{
+        font-size: 70px;
+        color: aliceblue;
+        border: 5px solid #fff;
+        padding: 15px;
+        border-radius: 50%;
+        margin: 15px;
+    }
+    header .left{
+        text-align: center;
+        margin-top: 0;
+        width: 100%;
+    }
+    header .right{
+        text-align: center;
+        width: 100%;
+        display: flex;
+    }
+    header .right li a{
+        font-size: 20px;
+    }
+
+
+
+    .card-container .cards{
+        background-color: gray;
+        text-align: center;
+        width: 350px;
+        height: 500px;
+    }
+    .card-container .a{
+        grid-area: a;
+    }
+
+    .card-container .s{
+        grid-area: s;
+    }
+    .card-container .d{
+        grid-area: d;
+    }
+    .card-container .f{
+        grid-area: f;
+    }
+
+    .card-container{
+        display: grid;
+        grid-template-areas: 'a s ' 'd f';
+        grid-row-gap: 20px;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .card-container{
+        display: grid;
+        grid-template-areas: 'a s ' 'd f';
+        grid-row-gap: 50px;
+    }
+    .card-container .cards{
+        width: 450px;
+        height: 550px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+    header{
+        background-color: rgb(36, 152, 152);
+        width: 100%;
+        border: 2px solid black;
+        display: grid;
+        grid-template-areas: 'l r';
+        align-items: center;
+    }
+    header .left{
+        grid-area: l;
+    }
+    header .right{
+    grid-area: r;
+    }
+
+    header .right li a{
+        background-color: rgb(36, 152, 152);
+    }
+    header .right li a:hover{
+        box-shadow: 0 0 0;
+        text-decoration: underline;
+        transform: scale(1.2);
+    }
+
+    main{
+        height: 800px;
+        background-attachment:scroll;
+    }
+
+
+    .card-container{
+        display: grid;
+        grid-template-areas: 'a s d f';
+        grid-row-gap: 50px;
+    }
+    .card-container .cards{
+        width: 270px;
+        height: 500px;
+    }
+
+    .contact-us{
+        display: grid;
+        grid-template-areas: 'i u';
+    }
+    .contact-us i{
+        grid-area: i;
+    }
+    .contact-details{
+        text-align: center;
+        grid-area: u;
+    }
+
+    footer{
+        display: grid;
+        grid-template-areas: 'm n';
+        align-items: center;
+    }
+    footer .left{
+        grid-area: m;
+    }
+    footer .right{
+        grid-area: n;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1490px) {
+    .card-container{
+        display: grid;
+        grid-template-areas: 'a s d f';
+    }
+    .card-container .cards{
+        width: 350px;
+        height: 550px;
+    }
+}

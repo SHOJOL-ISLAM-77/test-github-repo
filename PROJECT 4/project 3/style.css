@@ -1,0 +1,622 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+.dot-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 0 auto;
+    width: 100px;
+
+}
+                        /* NAVBAR start */
+
+
+
+.navbar{
+    background-color: rgb(40, 90, 90);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.nav-img{
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+.center{
+    color: aliceblue;
+}
+
+.link a{
+    display:block;
+    color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(24, 54, 54);
+    border-radius: 10px;
+}
+.link a:hover{
+    background-color: rgb(14, 34, 34);
+}
+
+
+                        /* NAVBAR END */
+
+                        /* main start */
+
+
+
+.main{
+    padding:130px 10px;
+    position: relative;
+    text-align: center;
+}
+.top-icon{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    transition: 2s;
+    width: 80px;
+}
+.top-icon:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+.description h1{
+    font-size:40px ;
+    font-family: 'Satisfy', cursive;
+}
+.description p{
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Bruno Ace SC', cursive;
+}
+.bottom-icon{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transition: 2s;
+    width: 80px;
+    left: 20px;
+}
+.bottom-icon:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+
+
+
+
+                            /* main end */
+
+                            /* card start */
+
+
+.card-container{
+    background-color: gray;
+    padding: 10px;
+}
+
+.card{
+    width: 48%;
+    background-image: radial-gradient(rgb(148, 227, 221), rgb(34, 36, 196));
+    float: left;
+    margin-right: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px ,   -5px 0 5px;
+}
+
+.card-img{
+    width: 100%;
+    height: 250px;
+}
+
+.card-title{
+    text-align: center;
+    padding: 10px;
+}
+.card-dec{
+    text-align: center;
+    font-family: 'Bruno Ace SC', cursive;
+    
+}
+.clear{
+    clear: both;
+}
+
+
+
+                                /* card end */
+
+                            /* about me section start */
+
+
+
+.about-me{
+    background-color: rgb(127, 146, 255);
+    padding: 20px;
+}
+.a-m{
+    text-align: center;
+    padding: 20px;
+}
+
+.img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.decription{
+    text-align: center;
+    
+}
+.decription p{
+    padding: 10px;
+    font-size: 20px;
+}
+.decription a{
+    color: rgb(14, 14, 14);
+}
+hr{
+    border: 5px solid rgb(231, 229, 229);
+    border-bottom: none;
+}
+.l{
+    font-family: 'Dancing Script', cursive;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.btnd{
+    width: 100%;
+    text-align: center;
+}
+.btn:hover{
+    width: calc(220px);
+    box-shadow: 5px 5px 5px rgb(34, 33, 33) , -5px -5px 5px rgb(46, 45, 45);
+}
+
+                            
+                            /* about me section end */
+
+                             /* 3 card section start */
+
+
+.three-cards-container{
+    padding: 10px;
+}                         
+.cards{
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+.logo{
+    padding: 20px;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+    border: 5px solid rgb(255, 253, 253);
+    border-radius: 50%;
+}
+.cards h1{
+    background-color: #3b3b3b;
+    color: aliceblue;
+}
+.cards p{
+    text-align: left;
+    padding: 20px;
+}
+
+.cards:hover{
+    box-shadow: 5px 5px 5px;
+}
+
+.skills-container{
+    padding-right: 45px;
+}
+.skills-container li{
+    font-weight: bold;
+    margin: 30px 10px;
+    position: relative;
+    text-align: left;
+}
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background-color: #434862;
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 1000px;
+}
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 15px;
+    background-color: #101424;
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.html::after{
+    animation-name: HTML;
+}
+@keyframes HTML {
+    to{
+        width: 90%;
+    }
+}
+.css::after{
+    animation-name: css;
+}
+@keyframes css {
+    to{
+        width: 80%;
+    }
+}
+.bts::after{
+    animation-name: bts;
+}
+@keyframes bts {
+    to{
+        width: 95%;
+    }
+}
+.js::after{
+    animation-name: js;
+}
+@keyframes js {
+    to{
+        width: 70%;
+    }
+}
+.jq::after{
+    animation-name: jq;
+}
+@keyframes jq {
+    to{
+        width: 60%;
+    }
+}
+
+.njs::after{
+    animation-name: njs;
+}
+@keyframes njs {
+    to{
+        width: 65%;
+    }
+}
+.ejs::after{
+    animation-name: ejs;
+}
+@keyframes ejs {
+    to{
+        width: 80%;
+    }
+}
+.github::after{
+    animation-name: github;
+}
+@keyframes github {
+    to{
+        width: 62%;
+    }
+}
+.rjs::after{
+    animation-name: rjs;
+}
+@keyframes rjs {
+    to{
+        width: 53%;
+    }
+}
+
+
+                             /* 3 card section end */
+
+                             /* footer start */
+
+.footer-container{
+    background-color: darkcyan ;
+    color: #fff;
+    padding: 30px;
+}
+.footer-container div{
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+.dot{
+    border: dotted 6px rgb(238, 233, 233);
+    border-bottom: none;
+    margin: 0 auto;
+    width: 200px;
+}
+.center-h{
+    padding: 10px;
+    text-align: center;
+}
+#small{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    padding-left: 5px;
+    text-align: center;
+}
+#big{
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    padding-left: 5px;
+    text-align: center;
+}
+#btn-f{
+    background-color: #3b3b3b;
+    color: #fff;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s;
+}
+#btn-ff img{
+    width: 30px;
+}
+#btn-ff{
+    width: 150px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#btn-ff:hover{
+    box-shadow: 5px 5px 5px rgb(44, 43, 43);
+    width:200px ;
+}
+#btn-f:hover{
+    box-shadow: 5px 5px 5px rgb(143, 140, 140);
+    width:200px ;
+}
+#btn-mc{
+    margin: 10px ; 
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.footer-btn{
+    text-align: center;
+   background-color:#008B8B;
+}
+
+
+                             /* footer end */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) { 
+    .navbar{
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    .first{
+        width: 50%;
+        text-align: left;
+    }
+    .center{
+        width: 50%;
+    }
+    .link {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+    }
+
+                             /* NAVBAR end */
+ }
+
+
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px){
+    .link{
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+    .description h1{
+        font-size: 55px;
+    }
+    .description p{
+        font-size: 25px;
+    }
+
+
+                             /* NAVBAR end */
+
+                             /* card start */
+
+    .card{
+        width:31%;
+        margin-right: 17px;
+    }
+    .card-img{
+        height: 200px;
+    }
+                             /* card end */
+
+                        /* 3 card section start */
+    .cards{
+        margin: 0 auto;
+        width: 650px;
+    }     
+                        /* 3 card section end */      
+                        
+    .footer-container div{
+        width: 70%;
+        margin: 0 auto;
+    }
+    #btn-mc{
+        font-size: 30px;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+    .first{
+        width: 15%;
+
+    }
+    .center{
+        width: 20%;
+    }
+    .link{
+        width: 65%;
+    }
+
+                         /* NAVBAR end */
+
+    .description h1{
+        padding: 20px;
+    }
+    .description p{
+        padding: 20px;
+    }
+    .top-icon{
+        right: 100px;
+    }
+    .bottom-icon{
+        left: 100px;
+    }
+                        /* main start */
+                        /* about-me start */
+
+    .photo{
+        padding: 30px;
+        width: 48%;
+        float: left;
+    }
+    .decription{
+        width: 48%;
+        float: left;
+        padding: 30px;
+    }
+    .decription p{
+        font-size: 25px;
+        padding: 20px;
+    }
+    .btn{
+        height: 70px;
+        width: 200px;
+        font-size: 30px;
+    }
+                            /* about-me end  */
+                        /* 3 card section start */
+    .cards{      
+        margin: 10px;
+    }   
+    .three-cards-container{
+        display: flex;
+    }     
+                            /* 3 card section end */ 
+                            
+    .footer-container div{
+        width: 65%;
+    }
+ }
+
+
+ 
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1300px){
+    .link{
+        width: 60%;
+        font-size: 20px;
+        text-align: right;
+    }
+    .center{
+        width: 30%;
+        font-size: 30px;
+    }
+    .first{
+        width: 10%;
+    }
+                              /* NAVBAR end */
+
+    .description h1{
+        padding: 30px;
+    }
+    .description p{
+        padding: 30px;
+    }
+
+    .top-icon{
+        right: 150px;
+    }
+    .bottom-icon{
+        left: 150px;
+    }
+                                /* main end */
+
+                                /* card start */
+
+        .card{
+            width:23%;
+            margin-left: 5px;
+        }
+        .card-img{
+            height: 200px;
+        }
+                                 /* card end */
+
+    .footer-container{
+        display: flex;
+    }
+ }
